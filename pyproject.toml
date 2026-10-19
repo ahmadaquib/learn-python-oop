@@ -1,0 +1,7 @@
+[project]
+name = "object-oriented-programming-python"
+version = "0.1.0"
+description = "Complete Object-Oriented Programming concepts in Python — classes, inheritance, decorators, and more."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
