@@ -22,11 +22,10 @@ Complete OOP concepts in Python — classes, inheritance, decorators, and more.
 
 ```bash
 # Clone the repo
-git clone https://github.com/ahmadaquib/Python.git
-cd Python
+git clone https://github.com/ahmadaquib/learn-python-oop.git
+cd learn-python-oop
 
 # Create virtual environment and install
-uv venv --python 3.14
 uv sync
 ```
 
