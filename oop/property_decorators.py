@@ -47,9 +47,10 @@ class Employee:
         This splits the full name and updates first + last accordingly.
         Without a setter, assigning to a @property raises AttributeError.
         """
-        first, last = name.split(" ")
-        self.first = first
-        self.last = last
+        parts = name.strip().split(" ", 1)
+        if len(parts) != 2:
+            raise ValueError("fullname must contain a first and a last name")
+        self.first, self.last = parts
 
     # --- @<name>.deleter ---
     @fullname.deleter
