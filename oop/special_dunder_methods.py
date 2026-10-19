@@ -82,6 +82,9 @@ class Employee:
             return NotImplemented
         return self.email == other.email
 
+    def __hash__(self) -> int:
+        return hash(self.email)
+
     # --- __lt__: less-than comparison (<) ---
     def __lt__(self, other: "Employee") -> bool:
         """
