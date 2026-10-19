@@ -13,6 +13,8 @@ Complete OOP concepts in Python — classes, inheritance, decorators, and more.
 | 5 | Special (Magic/Dunder) Methods | `oop/special_dunder_methods.py` |
 | 6 | Property Decorators | `oop/property_decorators.py` |
 
+> **Note:** Each module intentionally defines its own self-contained `Employee` class tailored to the specific concept demonstrated. This keeps each topic independent, readable, and runnable on its own without cross-file dependencies.
+
 ## Requirements
 
 - Python 3.14+

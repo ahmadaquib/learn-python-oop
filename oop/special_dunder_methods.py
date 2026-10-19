@@ -40,7 +40,7 @@ class Employee:
         Convention: should look like a valid constructor call when possible.
         This is what you see in the REPL or when using repr().
         """
-        return f"Employee('{self.first}', '{self.last}', {self.pay})"
+        return f"Employee({self.first!r}, {self.last!r}, {self.pay!r})"
 
     # --- __str__: for end users ---
     def __str__(self) -> str:
@@ -53,13 +53,15 @@ class Employee:
         return f"{self.fullname()} - {self.email}"
 
     # --- __add__: operator overloading (+) ---
-    def __add__(self, other: "Employee") -> int:
+    def __add__(self, other: object) -> int:
         """
         Define what + means for Employee objects.
 
         Here: adding two employees returns their combined salary.
         (Just like int.__add__ defines 1 + 2 = 3)
         """
+        if not isinstance(other, Employee):
+            return NotImplemented
         return self.pay + other.pay
 
     # --- __len__: support len() ---

@@ -58,7 +58,7 @@ class Employee:
         """
         Deleter — runs when `del emp.fullname` is called.
 
-        Useful for cleanup. Here we just reset to None.
+        Useful for cleanup. Here we reset first and last to empty strings.
         """
         print(f"  Deleting fullname for {self.first} {self.last}!")
         self.first = ""
